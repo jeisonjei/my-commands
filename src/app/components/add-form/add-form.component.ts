@@ -31,7 +31,7 @@ export class AddFormComponent implements AfterViewInit, OnDestroy {
   @ViewChild('urlElem') urlElem!: ElementRef<HTMLElement>;
   @Output() onSubmit: EventEmitter<RecordItem> = new EventEmitter();
   submit() {
-    var record = { id: this.id.get(), url: this.url, username: this.username, password: this.password };
+    var record = { id: this.id.get(), url: this.url, username: this.username, command: this.password };
     this.onSubmit.emit(record);
     this.url = null;
     this.username = null;
