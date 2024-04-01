@@ -5,7 +5,10 @@
       <app-add-form (onSubmit)="addRecord($event)"></app-add-form>
     </div>
     <div>
-      <input placeholder="Поиск..." #searchElem type="text" name="search" id="" class="mb-1" appFocus (input)="search(searchElem.value)">
+      <div class="s-flex jcb mb-1">
+        <input placeholder="Поиск..." #searchElem type="text" name="search" id="" (input)="search(searchElem.value)">
+        <div>Всего {{records.length}} команд</div>
+      </div>
       @if(searchNow)
       {
         <app-list [records]="found"></app-list>

@@ -23,7 +23,11 @@ input{
 
     
 }
-
+.s-flex{
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+}
 @media (min-width: 740px) {
     .grid{
         display: grid;
