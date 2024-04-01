@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 4rem;
+            padding-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <div class='container'>
+        <div class="grid">
+            <div>Содержимое колонки 1</div>
+            <div>Содержимое колонки 2</div>
+        </div>
+    </div>
+    <script>
+        var gridElem = document.querySelector('.grid');
+        var gridStylesheet = window.getComputedStyle(gridElem);
+        var gridPaddingTop = gridStylesheet.getProperty('paddingTop');
+        console.log(gridPaddingTop);
+    </script>
+</body>
+</html>

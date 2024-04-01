@@ -1,0 +1,11 @@
+<app-header (headerHeightCalculated)="refreshPage($event)"></app-header>
+<div class="content" id="content">
+  <div class="grid">
+    <div>
+      <app-add-form (onSubmit)="addRecord($event)"></app-add-form>
+    </div>
+    <div>
+      <app-list [records]="records"></app-list>
+    </div>
+  </div>
+</div>

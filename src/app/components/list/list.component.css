@@ -1,0 +1,7 @@
+
+@media (min-width:740px){
+    .list{
+        height: calc(100vh - var(--header-height) - var(--grid-padding-top) - var(--content-padding-bottom));
+        overflow-y: auto;
+    }
+}

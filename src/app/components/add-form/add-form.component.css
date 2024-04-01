@@ -1,0 +1,30 @@
+.grid{
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+    grid-auto-rows: max-content;
+    column-gap: 0.5rem;
+    align-items: center;
+    height: fit-content;
+}
+input{
+    height: 1.75rem;   
+    caret-color: var(--slate);
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    border: solid 1px;
+    border-radius: 5px;
+
+    
+}
+button{
+    /* height: 2rem; */
+    background-color: var(--slate-dark);
+    color:white;
+    border: solid 1px;
+    border-radius: 5px;
+    padding: 10px;
+}
+button:hover{
+    cursor: pointer;
+    background-color: var(--slate);
+}

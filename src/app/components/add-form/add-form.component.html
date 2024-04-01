@@ -1,0 +1,18 @@
+<div class="grid mb-05">
+    <label for="url">Ссылка</label>
+    <input #urlElem type="text" name="url" id="" appFocus [value]="url" (input)="assignUrl($event)" appFocus>
+</div>
+<div class="grid mb-05">
+    <label for="username">Логин</label>
+    <input type="text" name="username" id="" [value]="username" (input)="assignUsername($event)">
+</div>
+<div class="grid mb-05">
+    <label for="password">Пароль</label>
+    <input type="text" name="password" id="" [value]="password" (input)="assignPassword($event)">
+</div>
+<div class="grid mb-1">
+    <div></div>
+    <div class="flex jce">
+        <button class="btn" (click)="submit()">Добавить</button>
+    </div>
+</div>

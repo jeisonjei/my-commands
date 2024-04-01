@@ -1,0 +1,34 @@
+.card{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    padding: 1rem;
+    border-radius: 10px;
+    border:1px solid var(--slate);
+    margin-bottom: 0.5rem;
+}
+.btn:hover{
+    cursor: pointer;
+}
+.transparent{
+    background-color: transparent;
+    border: 0;
+}
+.red{
+    color:red;
+}
+.slate{
+    color: var(--slate);
+}
+.copied-alert-hidden{
+    text-align: center;
+    background-color: transparent;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 10px;
+}
+.copied-alert-shown{
+    text-align: center;
+    background-color: var(--success);
+    padding: 0.5rem;
+    border-radius: 10px;
+
+}
