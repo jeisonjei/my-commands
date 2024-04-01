@@ -15,9 +15,20 @@ import { RecordService } from './services/record.service';
 })
 
 export class AppComponent implements OnInit, AfterViewInit {
+  search(arg0: string) {
+    if (arg0) {
+      this.searchNow = true;
+      this.found = this.records.filter(rec=>`${rec.url}+${rec.command}`.toLowerCase().includes(arg0.toLowerCase()));
+    }
+    else {
+      this.searchNow = false;
+    }
+  }
+  searchNow: any;
+  found: RecordItem[];
   refreshPage(headerHeight: string) {
     console.log(headerHeight);
-      }
+  }
   constructor(
     private recordService: RecordService
   ) { }

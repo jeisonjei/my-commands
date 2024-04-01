@@ -13,6 +13,17 @@
     padding-top: var(--grid-padding-top);
 }
 
+input{
+    height: 1.75rem;   
+    caret-color: var(--slate);
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    border: solid 1px;
+    border-radius: 5px;
+
+    
+}
+
 @media (min-width: 740px) {
     .grid{
         display: grid;
