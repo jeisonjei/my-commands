@@ -4,5 +4,6 @@
     top:0;
     left: 50%;
     transform: translateX(-50%);
-    background-color: var(--header);
+    /* background-color: var(--header); */
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgb(172, 113, 255) 0%, rgba(203,159,249,1) 90% );
 }
