@@ -24,7 +24,7 @@ export class AddFormComponent implements AfterViewInit, OnDestroy {
   }
   handleEnterKeydown(event: KeyboardEvent): void {
     if (event.key === 'Enter') {
-      if (document.activeElement !== this.urlElem.nativeElement && document.activeElement!== this.commandElem.nativeElement) {
+      if (document.activeElement !== this.urlElem.nativeElement && document.activeElement!== this.commandElem.nativeElement && this.urlElem.nativeElement.value!=='') {
         this.urlElem.nativeElement.focus();
       } else {
         this.submit();

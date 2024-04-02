@@ -1,7 +1,7 @@
 <div class="card">
     <div class="flex jcb mb-1">
         @if(isLink(recordItem.url)){
-        <a href="http://{{recordItem.url}}" target="_blank" rel="noopener noreferrer">{{recordItem.url}}</a>
+        <a href="http://{{recordItem.url}}" target="_blank" rel="noopener noreferrer" class="overflow-link">{{recordItem.url}}</a>
 
         }
         @else {

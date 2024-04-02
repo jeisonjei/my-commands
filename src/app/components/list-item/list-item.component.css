@@ -5,6 +5,12 @@
     border:1px solid var(--slate);
     margin-bottom: 0.5rem;
 }
+.overflow-link{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
 .btn:hover{
     cursor: pointer;
 }

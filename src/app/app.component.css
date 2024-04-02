@@ -1,6 +1,6 @@
 .content{
-    padding-left:1.5rem;
-    padding-right:1.5rem;
+    padding-left:5%;
+    padding-right:5%;
     padding-top: calc(var(--header-height));
     padding-bottom: var(--content-padding-bottom);
     display: flex;
@@ -12,7 +12,10 @@
     grid-template-columns: 1fr;
     padding-top: var(--grid-padding-top);
 }
-
+.grid-item{
+    max-width: 100%;
+    overflow-x: auto;
+}
 input{
     height: 1.75rem;   
     caret-color: var(--slate);
@@ -23,11 +26,14 @@ input{
 
     
 }
+
 .s-flex{
     display: flex;
     flex-flow: row;
     align-items: center;
 }
+
+
 @media (min-width: 740px) {
     .grid{
         display: grid;
@@ -37,8 +43,7 @@ input{
         
     }
     .content{
-        padding-left:5rem;
-        padding-right:5rem;
+
         display: flex;
         justify-content: center;
     

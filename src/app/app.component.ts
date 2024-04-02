@@ -13,6 +13,7 @@ import { AddFormComponent } from './components/add-form/add-form.component';
 import { RecordItem } from './models/interfaces';
 import { ListComponent } from './components/list/list.component';
 import { RecordService } from './services/record.service';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-root',
@@ -22,7 +23,7 @@ import { RecordService } from './services/record.service';
   imports: [RouterOutlet, HeaderComponent, AddFormComponent, ListComponent],
 })
 export class AppComponent implements OnInit, AfterViewInit {
-  constructor(private recordService: RecordService) {}
+  constructor(private recordService: RecordService, private title: Title) {}
 
   @ViewChild('searchElem') searchElem!: ElementRef<HTMLInputElement>;
   
@@ -46,6 +47,7 @@ export class AppComponent implements OnInit, AfterViewInit {
 
   ngOnInit(): void {
     this.records = this.recordService.list();
+    this.title.setTitle('My Commands');
   }
 
   ngAfterViewInit(): void {
