@@ -6,17 +6,21 @@
     </div>
     <div>
       <div class="s-flex jcb mb-1">
-        <input placeholder="Поиск..." #searchElem type="text" name="search" id="" (input)="search()">
-        <div>Всего {{records.length}} команд</div>
+        <input
+          #searchElem
+          placeholder="Поиск..."
+          type="text"
+          name="search"
+          id=""
+          (input)="search()"
+        />
+        <div>Всего {{ records.length }} команд</div>
       </div>
-      @if(searchNow)
-      {
-        <app-list [records]="found"></app-list>
+      @if(searchNow) {
+      <app-list [records]="found"></app-list>
+      } @else {
+      <app-list [records]="records"></app-list>
       }
-      @else {
-        <app-list [records]="records"></app-list>
-      }
-
     </div>
   </div>
 </div>
